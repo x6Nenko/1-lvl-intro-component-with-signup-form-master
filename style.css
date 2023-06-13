@@ -1,0 +1,225 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    place-content: center;
+    background-color: #FF7978;
+    font-family: 'Poppins', sans-serif;
+    padding: 98px 30px 0 30px;
+
+    background-image: url(./images/bg-intro-mobile.png);
+}
+
+footer {
+    margin: 50px 0 10px;
+}
+
+.hero-container, main {
+    max-width: 328px;
+}
+
+.hero-container h1 {
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 131.5%;
+    letter-spacing: -0.01em;
+    text-align: center;
+
+    color: #FFFDF7;
+    margin-bottom: 20px;
+}
+
+.hero-container p {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 159.5%;
+    text-align: center;
+    
+    color: #FFF6F3;
+    margin-bottom: 70px;
+}
+
+.pricing {
+    background: #5D54A3;
+    box-shadow: 0px 8px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 159.5%;
+    text-align: center;
+    letter-spacing: -0.01em;
+
+    color: #FEFCFF;
+    padding: 26px 71px;
+    margin-bottom: 24px;
+}
+
+.pricing b {
+    font-weight: 600;
+}
+
+.form-holder {
+    background-color: #fff;
+    box-shadow: 0px 8px 2px rgba(0, 0, 0, 0.15);
+    padding: 8px 24px;
+    border-radius: 10px;
+}
+
+form {
+    
+}
+
+.input-holder {
+    position: relative;
+}
+
+input {
+    padding: 20px;
+    margin-top: 18px;
+    width: 100%;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+}
+
+.warning-icon {
+    position: absolute;
+    top: 36px;
+    right: 20px;
+
+    display: none;
+}
+
+.warning {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    text-align: right;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 0.6875rem;
+    line-height: 159.5%;
+    color: #D98A8D;
+
+    display: none;
+}
+
+.wrong-input {
+    border: 2px solid #CF8D8E !important;
+    color: #DE7B7E;
+}
+
+input::placeholder {
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 159.5%;
+    letter-spacing: 0.025em;
+    color: #656469;
+}
+
+input:focus {
+    outline: 1px solid #B8B6C4;
+}
+
+.btn {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 16px 0 11px;
+    text-decoration: none;
+    background-color: #37CC8A;
+    border-radius: 5px;
+    border-bottom: 4px solid #2FBB7E;
+    margin-top: 18px;
+
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 159.5%;
+    letter-spacing: 0.025em;
+    color: #E4FFF8;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:focus, .btn:hover {
+    background: #77E2B4;
+    border-bottom: 4px solid #6BCCA1;
+    transition: all 0.2s ease-in-out;
+}
+
+.terms {
+    font-weight: 500;
+    font-size: 0.6875rem;
+    line-height: 187%;
+    text-align: center;
+
+    color: #B9B6C7;
+    margin: 10px 0 15px;
+}
+
+.terms a {
+    text-decoration: none;
+    color: #FF868C;
+}
+
+.success-holder {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 10px;
+    text-align: center;
+}
+
+.success {
+    font-size: 1rem;
+}
+
+/* =========== DESKTOP QUERIES =========== */
+
+@media screen and (min-width: 1200px) {
+    body {
+        height: 100vh;
+        background-image: url(./images/bg-intro-desktop.png);
+        grid-template-rows: 1fr auto;
+    }
+
+    footer {
+        align-self: end;
+        justify-self: center;
+    }
+
+    .main-wrapper {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        place-items: center;
+        place-self: center;
+    }
+
+    .hero-container, main {
+        max-width: unset;
+        width: 45%;
+    }
+
+    .hero-container h1, .hero-container p {
+        text-align: left;
+    }
+
+    .hero-container h1 {
+        font-weight: 700;
+        font-size: 3.125rem;
+        line-height: 115%;
+        letter-spacing: -0.01em;
+
+        color: #FCFFFF;
+    }
+}
