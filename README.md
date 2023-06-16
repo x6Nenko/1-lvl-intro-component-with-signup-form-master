@@ -26,7 +26,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/mobilefirst-workflow-flex-grid-XeV9vKfXR_)
-- Live Site URL: [Live site URL](https://x6nenko.github.io/intro-component-with-signup-form-master/)
+- Live Site URL: [Live site URL](https://x6nenko.github.io/1-lvl-intro-component-with-signup-form-master/)
 
 ## My process
 
